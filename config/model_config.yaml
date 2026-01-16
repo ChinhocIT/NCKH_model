@@ -1,0 +1,17 @@
+vision_encoder:
+  model_name: "Qwen/Qwen2-VL-2B-Instruct"
+  vision_dim: 1536
+  llm_dim: 1536
+
+segmentation:
+  num_classes: 172
+  decoder_type: "pup"
+
+adaptor:
+  num_query_tokens: 64
+
+sam:
+  model_name: "facebook/sam-vit-huge"
+  use_iterative: false
+
+device: "cuda"
